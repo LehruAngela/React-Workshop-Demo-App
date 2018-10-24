@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import '../styles/css/mainPage.css'
 
-class MainBody extends Component {
+class ItemBody extends Component {
   state = {
     value: this.props.value,
   }
@@ -21,7 +21,7 @@ class MainBody extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <div class="card">
           <div class="card-header">
             {this.props.children}
@@ -32,9 +32,9 @@ class MainBody extends Component {
             <button className='btn btn-primary' onClick={this.handleReduction} disabled={this.state.value === 0}>Sold</button>
           </div>
         </div>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
 
-export default MainBody;
+export default ItemBody;
