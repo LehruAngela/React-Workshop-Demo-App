@@ -7,3 +7,5 @@ Demo app for workshop that covers the following topics:
 - Handling events
 - Props/Passing Data to components
 
+Link to presentation slides 
+https://www.slideshare.net/AngelaJamimah/react-outbox
